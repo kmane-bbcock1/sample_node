@@ -8,6 +8,7 @@ node_js:
 env:
   global:
     - FOO=FUBU
+    - secure: hxOJqhqfBnjzkAOJYMzxo9atBfc9PukRgIOgTYSJ6sIoe+S1ZsF2ej8v8fNFZw0p3++Jinb79KUinYq4KMFaFGS5R+MWkQSGQyfNGuWKNcg8s51khFsdYtcHnhm+ssU32nWe+osPYlZMqdKShuDcVqsx1Kp5Y9MaoY+7HrRo4GCNR5hwSnoGehrKAV6tobNCkbnH0QlvskKTyfQTQs+MHLBPk+Q/Ug1t8rpmPPSFMkZf8Fv4tpybP7861lq6q8dYQ0nL3eUnXgt0przD9lGP2AxlFDnb5KZkeFC+PzEX5SlcwQgvYtlI9kRur6/L6Lv4cRfVllqCxYds3IddAYnyAw==
 
   matrix:
     - M1=ONE
@@ -25,6 +26,7 @@ build:
   ci:
     - ps -eax
     - ls -al  
+    - echo "$key"
     
   post_ci:
     - docker push shippabledocker/shiphitchcock1_sample_node2_bb
