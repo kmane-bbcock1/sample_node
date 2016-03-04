@@ -25,7 +25,7 @@ build:
   ci:
     - ps -eax
     - ls -al
-    - git clone git@bitbucket.org:shiphitchcock6/sample_node 
+   # - git clone git@bitbucket.org:shiphitchcock6/sample_node 
 
   post_ci:
     - docker push shippabledocker/shiphitchcock1_sample_node2_bb
